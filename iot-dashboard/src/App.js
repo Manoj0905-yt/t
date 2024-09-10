@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/data');
+        const response = await axios.get('https://b-lime.vercel.app/');
         setData(response.data);
         setLoading(false);
       } catch (error) {
